@@ -11,9 +11,9 @@ if is_module_loaded(FILENAME):
     from telegram.ext import CommandHandler, JobQueue, run_async
     from telegram.utils.helpers import escape_markdown
 
-    from EmikoRobot import EVENT_LOGS, LOGGER, dispatcher
-    from EmikoRobot.modules.helper_funcs.chat_status import user_admin
-    from EmikoRobot.modules.sql import log_channel_sql as sql
+    from Zaid import EVENT_LOGS, LOGGER, dispatcher
+    from Zaid.modules.helper_funcs.chat_status import user_admin
+    from Zaid.modules.sql import log_channel_sql as sql
 
     def loggable(func):
         @wraps(func)
