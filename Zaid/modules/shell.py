@@ -1,7 +1,7 @@
 import subprocess
 
-from EmikoRobot import LOGGER, dispatcher
-from EmikoRobot.modules.helper_funcs.chat_status import dev_plus
+from Zaid import LOGGER, dispatcher
+from Zaid.modules.helper_funcs.chat_status import dev_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler
 from telegram.ext.dispatcher import run_async
