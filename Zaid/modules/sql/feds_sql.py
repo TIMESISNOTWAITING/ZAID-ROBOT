@@ -1,8 +1,8 @@
 import ast
 import threading
 
-from EmikoRobot import dispatcher
-from EmikoRobot.modules.sql import BASE, SESSION
+from Zaid import dispatcher
+from Zaid.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, String, UnicodeText
 from telegram.error import BadRequest, Unauthorized
 from sqlalchemy.sql.sqltypes import BigInteger
