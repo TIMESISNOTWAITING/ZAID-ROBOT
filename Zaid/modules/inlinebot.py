@@ -1,8 +1,8 @@
 import traceback
 
-from EmikoRobot import pbot as app
-from EmikoRobot.utils.pluginhelper import fetch
-from EmikoRobot.utils.inlinefuncs import *
+from Zaid import pbot as app
+from Zaid.utils.pluginhelper import fetch
+from Zaid.utils.inlinefuncs import *
 
 __MODULE__ = "Inline"
 __HELP__ = """See inline for help related to inline"""
