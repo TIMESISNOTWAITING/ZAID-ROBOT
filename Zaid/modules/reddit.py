@@ -19,8 +19,8 @@ SOFTWARE.
 """
 from pyrogram import filters
 
-from EmikoRobot import pbot as app, arq
-from EmikoRobot.utils.errors import capture_err
+from Zaid import pbot as app, arq
+from Zaid.utils.errors import capture_err
 
 __mod_name__ = "Reddit"
 
