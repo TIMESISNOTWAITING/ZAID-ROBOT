@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler
 
-import EmikoRobot.modules.sql.notes_sql as sql
-from EmikoRobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
-from EmikoRobot.__main__ import DATA_IMPORT
-from EmikoRobot.modules.helper_funcs.chat_status import user_admin
-from EmikoRobot.modules.helper_funcs.alternate import typing_action
+import Zaid.modules.sql.notes_sql as sql
+from Zaid import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
+from Zaid.__main__ import DATA_IMPORT
+from Zaid.modules.helper_funcs.chat_status import user_admin
+from Zaid.modules.helper_funcs.alternate import typing_action
 
-# from EmikoRobot.modules.rules import get_rules
-import EmikoRobot.modules.sql.rules_sql as rulessql
+# from Zaid.modules.rules import get_rules
+import Zaid.modules.sql.rules_sql as rulessql
 
-# from EmikoRobot.modules.sql import warns_sql as warnssql
-import EmikoRobot.modules.sql.blacklist_sql as blacklistsql
-from EmikoRobot.modules.sql import disable_sql as disabledsql
+# from Zaid.modules.sql import warns_sql as warnssql
+import Zaid.modules.sql.blacklist_sql as blacklistsql
+from Zaid.modules.sql import disable_sql as disabledsql
 
-# from EmikoRobot.modules.sql import cust_filters_sql as filtersql
-# import EmikoRobot.modules.sql.welcome_sql as welcsql
-import EmikoRobot.modules.sql.locks_sql as locksql
-from EmikoRobot.modules.connection import connected
+# from Zaid.modules.sql import cust_filters_sql as filtersql
+# import Zaid.modules.sql.welcome_sql as welcsql
+import Zaid.modules.sql.locks_sql as locksql
+from Zaid.modules.connection import connected
 
 
 @user_admin
