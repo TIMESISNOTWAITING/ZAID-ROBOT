@@ -1,5 +1,5 @@
-from EmikoRobot.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
-from EmikoRobot import DRAGONS
+from Zaid.modules.helper_funcs.telethn import IMMUNE_USERS, telethn
+from Zaid import DRAGONS
 from telethon.tl.types import ChannelParticipantsAdmins
 
 
