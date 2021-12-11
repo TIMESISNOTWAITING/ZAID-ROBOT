@@ -3,9 +3,9 @@ import re
 from typing import Optional
 
 import telegram
-from EmikoRobot import TIGERS, WOLVES, dispatcher
-from EmikoRobot.modules.disable import DisableAbleCommandHandler
-from EmikoRobot.modules.helper_funcs.chat_status import (
+from Zaid import TIGERS, WOLVES, dispatcher
+from Zaid.modules.disable import DisableAbleCommandHandler
+from Zaid.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     is_user_admin,
