@@ -1,6 +1,6 @@
 # Module to blacklist users and prevent them from using commands by @TheRealPhoenix
 import html
-import EmikoRobot.modules.sql.blacklistusers_sql as sql
+import Zaid.modules.sql.blacklistusers_sql as sql
 from EmikoRobot import (
     DEV_USERS,
     OWNER_ID,
@@ -10,12 +10,12 @@ from EmikoRobot import (
     WOLVES,
     dispatcher,
 ) 
-from EmikoRobot.modules.helper_funcs.chat_status import dev_plus
-from EmikoRobot.modules.helper_funcs.extraction import (
+from Zaid.modules.helper_funcs.chat_status import dev_plus
+from Zaid.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from EmikoRobot.modules.log_channel import gloggable
+from Zaid.modules.log_channel import gloggable
 from telegram import ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler
