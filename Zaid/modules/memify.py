@@ -1,8 +1,8 @@
 import textwrap
 import os
 from PIL import Image, ImageFont, ImageDraw
-from EmikoRobot.events import register
-from EmikoRobot import LOGGER, TEMP_DOWNLOAD_DIRECTORY, telethn as bot
+from Zaid.events import register
+from Zaid import LOGGER, TEMP_DOWNLOAD_DIRECTORY, telethn as bot
 
 
 @register(pattern="^/mmf ?(.*)")
