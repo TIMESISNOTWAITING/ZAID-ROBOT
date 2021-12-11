@@ -1,6 +1,6 @@
-from EmikoRobot import pbot as app
-from EmikoRobot.utils.errors import capture_err
-from EmikoRobot.ex_plugins.dbfunctions import get_couple, save_couple
+from Zaid import pbot as app
+from Zaid.utils.errors import capture_err
+from Zaid.ex_plugins.dbfunctions import get_couple, save_couple
 from pyrogram import filters
 import random
 from datetime import datetime
