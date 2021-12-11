@@ -119,7 +119,7 @@ if ENV:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from EmikoRobot.config import Development as Config
+    from Zaid.config import Development as Config
 
     TOKEN = Config.TOKEN
 
@@ -198,9 +198,8 @@ else:
 # If you forking dont remove this id, just add your id. LOL...
 
 DRAGONS.add(OWNER_ID)
-DRAGONS.add(2088106582)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(2088106582)
+DEV_USERS.add(1669178360)
 
 if not SPAMWATCH_API:
     sw = None
@@ -212,7 +211,7 @@ else:
         sw = None
         LOGGER.warning("Can't connect to SpamWatch!")
 
-from EmikoRobot.modules.sql import SESSION
+from Zaid.modules.sql import SESSION
 
 defaults = tg.Defaults(run_async=True)
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
@@ -282,7 +281,7 @@ DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
 
 # Load at end to ensure all prev variables have been set
-from EmikoRobot.modules.helper_funcs.handlers import (
+from Zaid.modules.helper_funcs.handlers import (
     CustomCommandHandler,
     CustomMessageHandler,
     CustomRegexHandler,
