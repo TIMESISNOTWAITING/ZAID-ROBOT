@@ -1,9 +1,9 @@
 import html
 
-from EmikoRobot import LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher
-from EmikoRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from EmikoRobot.modules.log_channel import loggable
-from EmikoRobot.modules.sql import reporting_sql as sql
+from Zaid import LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher
+from Zaid.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from Zaid.modules.log_channel import loggable
+from Zaid.modules.sql import reporting_sql as sql
 from telegram import Chat, InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (
