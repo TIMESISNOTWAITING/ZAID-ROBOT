@@ -32,9 +32,9 @@ import speedtest
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 from pyrogram.types import Message
 
-from EmikoRobot import aiohttpsession as aiosession
-from EmikoRobot.ex_plugins.dbfunctions import start_restart_stage
-from EmikoRobot.utils.http import get, post
+from Zaid import aiohttpsession as aiosession
+from Zaid.ex_plugins.dbfunctions import start_restart_stage
+from Zaid.utils.http import get, post
 
 
 async def restart(m: Message):
