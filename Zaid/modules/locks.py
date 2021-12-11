@@ -8,20 +8,20 @@ from telegram.utils.helpers import mention_html
 
 from alphabet_detector import AlphabetDetector
 
-import EmikoRobot.modules.sql.locks_sql as sql
-from EmikoRobot import dispatcher, DRAGONS, LOGGER
-from EmikoRobot.modules.disable import DisableAbleCommandHandler
-from EmikoRobot.modules.helper_funcs.chat_status import (
+import Zaid.modules.sql.locks_sql as sql
+from Zaid import dispatcher, DRAGONS, LOGGER
+from Zaid.modules.disable import DisableAbleCommandHandler
+from Zaid.modules.helper_funcs.chat_status import (
     can_delete,
     is_user_admin,
     user_not_admin,
     is_bot_admin,
     user_admin,
 )
-from EmikoRobot.modules.log_channel import loggable
-from EmikoRobot.modules.connection import connected
-from EmikoRobot.modules.sql.approve_sql import is_approved
-from EmikoRobot.modules.helper_funcs.alternate import send_message, typing_action
+from Zaid.modules.log_channel import loggable
+from Zaid.modules.connection import connected
+from Zaid.modules.sql.approve_sql import is_approved
+from Zaid.modules.helper_funcs.alternate import send_message, typing_action
 
 ad = AlphabetDetector()
 
