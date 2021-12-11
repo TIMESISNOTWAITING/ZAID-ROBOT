@@ -1,15 +1,15 @@
-from EmikoRobot import telethn as tbot
-from EmikoRobot.events import register
+from Zaid import telethn as tbot
+from Zaid.events import register
 import os
 import asyncio
 import os
 import time
 from datetime import datetime
-from EmikoRobot import OWNER_ID, DEV_USERS
-from EmikoRobot import TEMP_DOWNLOAD_DIRECTORY as path
-from EmikoRobot import TEMP_DOWNLOAD_DIRECTORY
+from Zaid import OWNER_ID, DEV_USERS
+from Zaid import TEMP_DOWNLOAD_DIRECTORY as path
+from Zaid import TEMP_DOWNLOAD_DIRECTORY
 from datetime import datetime
-water = './EmikoRobot/resources/emiko.png'
+water = './Zaid/resources/zaid.png'
 client = tbot
 
 @register(pattern=r"^/send ?(.*)")
@@ -21,7 +21,7 @@ async def Prof(event):
     thumb = water
     message_id = event.message.id
     input_str = event.pattern_match.group(1)
-    the_plugin_file = "./EmikoRobot/modules/{}.py".format(input_str)
+    the_plugin_file = "./Zaid/modules/{}.py".format(input_str)
     if os.path.exists(the_plugin_file):
      message_id = event.message.id
      await event.client.send_file(
