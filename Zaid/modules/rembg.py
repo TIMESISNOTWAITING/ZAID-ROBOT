@@ -1,7 +1,7 @@
-# Copyright (C) 2021 TeamDaisyX
+# Copyright (C) 2021 Zaid
 
 
-# This file is part of Daisy (Telegram Bot)
+# This file is part of Zaid (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -25,9 +25,9 @@ import requests
 from telethon import types
 from telethon.tl import functions
 
-from EmikoRobot import REM_BG_API_KEY
-from EmikoRobot.events import register
-from EmikoRobot import telethn as tbot
+from Zaid import REM_BG_API_KEY
+from Zaid.events import register
+from Zaid import telethn as tbot
 
 REM_BG_API_KEY = "REM_BG_API_KEY"
 TEMP_DOWNLOAD_DIRECTORY = "./"
