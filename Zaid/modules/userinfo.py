@@ -31,16 +31,16 @@ from EmikoRobot import (
     StartTime,
     SUPPORT_CHAT,
 )
-from EmikoRobot.__main__ import STATS, TOKEN, USER_INFO
-from EmikoRobot.modules.sql import SESSION
-import EmikoRobot.modules.sql.userinfo_sql as sql
-from EmikoRobot.modules.disable import DisableAbleCommandHandler
-from EmikoRobot.modules.sql.global_bans_sql import is_user_gbanned
-from EmikoRobot.modules.sql.afk_sql import is_afk, set_afk
-from EmikoRobot.modules.sql.users_sql import get_user_num_chats
-from EmikoRobot.modules.helper_funcs.chat_status import sudo_plus
-from EmikoRobot.modules.helper_funcs.extraction import extract_user
-from EmikoRobot import telethn
+from Zaid.__main__ import STATS, TOKEN, USER_INFO
+from Zaid.modules.sql import SESSION
+import Zaid.modules.sql.userinfo_sql as sql
+from Zaid.modules.disable import DisableAbleCommandHandler
+from Zaid.modules.sql.global_bans_sql import is_user_gbanned
+from Zaid.modules.sql.afk_sql import is_afk, set_afk
+from Zaid.modules.sql.users_sql import get_user_num_chats
+from Zaid.modules.helper_funcs.chat_status import sudo_plus
+from Zaid.modules.helper_funcs.extraction import extract_user
+from Zaid import telethn
 
 def no_by_per(totalhp, percentage):
     """
