@@ -1,13 +1,13 @@
 
 import random, html
 
-from EmikoRobot import dispatcher
-from EmikoRobot.modules.disable import (
+from Zaid import dispatcher
+from Zaid.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
-from EmikoRobot.modules.sql import afk_sql as sql
-from EmikoRobot.modules.users import get_user_id
+from Zaid.modules.sql import afk_sql as sql
+from Zaid.modules.users import get_user_id
 from telegram import MessageEntity, Update
 from telegram.error import BadRequest
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
