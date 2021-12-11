@@ -2,9 +2,9 @@ import importlib
 from typing import Union
 
 from future.utils import string_types
-from EmikoRobot import dispatcher
-from EmikoRobot.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
-from EmikoRobot.modules.helper_funcs.misc import is_module_loaded
+from Zaid import dispatcher
+from Zaid.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
+from Zaid.modules.helper_funcs.misc import is_module_loaded
 from telegram import ParseMode, Update
 from telegram.ext import (
     CallbackContext,
