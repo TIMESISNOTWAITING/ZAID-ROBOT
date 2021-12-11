@@ -4,9 +4,9 @@ from typing import List
 from telegram import Update
 from telegram.ext import run_async, CallbackContext
 
-from EmikoRobot import dispatcher
-from EmikoRobot.modules.disable import DisableAbleCommandHandler
-from EmikoRobot.modules.helper_funcs.chat_status import user_admin
+from Zaid import dispatcher
+from Zaid.modules.disable import DisableAbleCommandHandler
+from Zaid.modules.helper_funcs.chat_status import user_admin
 
 # sleep how many times after each edit in 'love'
 EDIT_SLEEP = 1
@@ -264,7 +264,7 @@ def love(update: Update, context: CallbackContext):
     for x in range(EDIT_TIMES):
         msg.edit_text(love_siren[x % 5])
         time.sleep(EDIT_SLEEP)
-    msg.edit_text("True Love💞")
+    msg.edit_text("You Are Mine 💝")
 
 
 @user_admin
