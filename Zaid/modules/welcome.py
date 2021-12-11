@@ -4,8 +4,8 @@ import re
 import time
 from functools import partial
 from io import BytesIO
-import EmikoRobot.modules.sql.welcome_sql as sql
-from EmikoRobot import (
+import Zaid.modules.sql.welcome_sql as sql
+from Zaid import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -15,19 +15,19 @@ from EmikoRobot import (
     LOGGER,
     dispatcher,
 )
-from EmikoRobot.modules.helper_funcs.chat_status import (
+from Zaid.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
     user_admin,
 )
-from EmikoRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from EmikoRobot.modules.helper_funcs.msg_types import get_welcome_type
-from EmikoRobot.modules.helper_funcs.handlers import MessageHandlerChecker
-from EmikoRobot.modules.helper_funcs.string_handling import (
+from Zaid.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from Zaid.modules.helper_funcs.msg_types import get_welcome_type
+from Zaid.modules.helper_funcs.handlers import MessageHandlerChecker
+from Zaid.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_parser,
 )
-from EmikoRobot.modules.log_channel import loggable
-from EmikoRobot.modules.sql.global_bans_sql import is_user_gbanned
+from Zaid.modules.log_channel import loggable
+from Zaid.modules.sql.global_bans_sql import is_user_gbanned
 from telegram import (
     ChatPermissions,
     InlineKeyboardButton,
