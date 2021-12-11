@@ -8,18 +8,18 @@ import requests
 from better_profanity import profanity
 from google_trans_new import google_translator
 from telethon import events
-from telethon.tl.types import ChatBannedRights
-from EmikoRobot.confing import get_int_key, get_str_key
-from EmikoRobot.services.telethonbasics import is_admin
-from EmikoRobot.events import register
+from Zaid.tl.types import ChatBannedRights
+from Zaid.confing import get_int_key, get_str_key
+from Zaid.services.telethonbasics import is_admin
+from Zaid.events import register
 from pymongo import MongoClient
-from EmikoRobot.modules.sql.nsfw_watch_sql import (
+from Zaid.modules.sql.nsfw_watch_sql import (
     add_nsfwatch,
     get_all_nsfw_enabled_chat,
     is_nsfwatch_indb,
     rmnsfwatch,
 )
-from EmikoRobot import telethn as tbot, MONGO_DB_URI, BOT_ID
+from Zaid import telethn as tbot, MONGO_DB_URI, BOT_ID
 
 translator = google_translator()
 MUTE_RIGHTS = ChatBannedRights(until_date=None, send_messages=False)
