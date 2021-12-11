@@ -5,7 +5,7 @@ import bs4
 import requests
 from telethon import types
 from telethon.tl import functions
-from EmikoRobot.events import register
+from Zaid.events import register
 
 langi = "en"
 
