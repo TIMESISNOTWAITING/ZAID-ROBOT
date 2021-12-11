@@ -18,6 +18,7 @@ TRUTH = (
 )
 
 DARE = (
+    "@Shubhanshutya ki gf bange gi ha ya na"
     "Show the most embarrassing photo on your phone"
     "Show the last five people you texted and what the messages said",
     "Let the rest of the group DM someone from your Instagram account",
