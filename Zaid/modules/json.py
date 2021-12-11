@@ -1,6 +1,6 @@
 import io
-from EmikoRobot.events import register
-from EmikoRobot import telethn as tbot
+from Zaid.events import register
+from Zaid import telethn as tbot
 from telethon import types
 from telethon import events
 from telethon.tl import functions
