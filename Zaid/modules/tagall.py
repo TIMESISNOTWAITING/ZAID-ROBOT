@@ -1,8 +1,8 @@
 import asyncio
 from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
-from EmikoRobot import telethn
-from EmikoRobot.events import register as tomori
+from Zaid import telethn
+from Zaid.events import register as tomori
 
 
 @tomori(pattern="^/tagall ?(.*)")
