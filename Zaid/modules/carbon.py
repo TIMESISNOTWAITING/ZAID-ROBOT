@@ -4,9 +4,9 @@ from pyrogram import __version__ as z
 from telethon import __version__ as s
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram import filters
-from EmikoRobot import pbot
-from EmikoRobot.utils.errors import capture_err
-from EmikoRobot.utils.functions import make_carbon
+from Zaid import pbot
+from Zaid.utils.errors import capture_err
+from Zaid.utils.functions import make_carbon
 
 
 @pbot.on_message(filters.command("carbon"))
@@ -24,15 +24,15 @@ async def carbon_func(_, message):
     carbon.close()
 
 
-MEMEK = "https://telegra.ph/file/11b5922a33de9968cedfe.jpg"
+MEMEK = "https://telegra.ph/file/be24bbabbe0ec30dff489.jpg"
 
 @pbot.on_message(filters.command("repo"))
 async def repo(_, message):
     await message.reply_photo(
         photo=MEMEK,
-        caption=f"""✨ **Hey I'm Emiko Robot** 
+        caption=f"""✨ **Hey, Zaid 2.0 R private U can Use Our Older Source** 
 
-**Owner repo : [sena-ex](https://t.me/excrybaby)**
+**Owner repo : [Source Code](https://t.me/ITZ-ZAID)**
 **Python Version :** `{y()}`
 **Library Version :** `{o}`
 **Telethon Version :** `{s}`
@@ -44,9 +44,9 @@ async def repo(_, message):
             [
                 [
                     InlineKeyboardButton(
-                        "Repo", url="https://github.com/kennedy-ex/emikorobot"), 
+                        "Repo", url="https://github.com/ITZ-ZAID"), 
                     InlineKeyboardButton(
-                        "Support", url="https://t.me/emikosupport")
+                        "Support", url="https://t.me/Superior_Support")
                 ]
             ]
         )
