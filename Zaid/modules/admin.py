@@ -5,9 +5,9 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-from EmikoRobot import DRAGONS, dispatcher
-from EmikoRobot.modules.disable import DisableAbleCommandHandler
-from EmikoRobot.modules.helper_funcs.chat_status import (
+from Zaid import DRAGONS, dispatcher
+from Zaid.modules.disable import DisableAbleCommandHandler
+from Zaid.modules.helper_funcs.chat_status import (
     bot_admin,
     can_pin,
     can_promote,
@@ -16,13 +16,13 @@ from EmikoRobot.modules.helper_funcs.chat_status import (
     ADMIN_CACHE,
 )
 
-from EmikoRobot.modules.helper_funcs.admin_rights import user_can_changeinfo, user_can_promote
-from EmikoRobot.modules.helper_funcs.extraction import (
+from Zaid.modules.helper_funcs.admin_rights import user_can_changeinfo, user_can_promote
+from Zaid.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from EmikoRobot.modules.log_channel import loggable
-from EmikoRobot.modules.helper_funcs.alternate import send_message
+from Zaid.modules.log_channel import loggable
+from Zaid.modules.helper_funcs.alternate import send_message
 
 
 @bot_admin
