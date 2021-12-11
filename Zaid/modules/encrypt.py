@@ -1,6 +1,6 @@
-from EmikoRobot import telethn as tbot
+from Zaid import telethn as tbot
 import os
-from EmikoRobot.events import register
+from Zaid.events import register
 import secureme
 
 
