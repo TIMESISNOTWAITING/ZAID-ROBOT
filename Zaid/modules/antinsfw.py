@@ -2,12 +2,12 @@ from os import remove
 
 from pyrogram import filters
 
-from EmikoRobot import BOT_USERNAME as bn
-from EmikoRobot import pbot, arq
-from EmikoRobot.utils.errors import capture_err
-from EmikoRobot.utils.permissions import adminsOnly
-from EmikoRobot.ex_plugins.dbfunctions import is_nsfw_on, nsfw_off, nsfw_on
-from EmikoRobot.utils.filter_groups import nsfw_detect_group
+from Zaid import BOT_USERNAME as bn
+from Zaid import pbot, arq
+from Zaid.utils.errors import capture_err
+from Zaid.utils.permissions import adminsOnly
+from Zaid.ex_plugins.dbfunctions import is_nsfw_on, nsfw_off, nsfw_on
+from Zaid.utils.filter_groups import nsfw_detect_group
 
 __mod_name__ = "Anti-NSFW​"
 
