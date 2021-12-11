@@ -4,9 +4,9 @@ import html
 import random
 import time
 
-from EmikoRobot import dispatcher
-from EmikoRobot.modules.disable import DisableAbleCommandHandler
-from EmikoRobot.modules.helper_funcs.chat_status import (is_user_admin)
+from Zaid import dispatcher
+from Zaid.modules.disable import DisableAbleCommandHandler
+from Zaid.modules.helper_funcs.chat_status import (is_user_admin)
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async, CallbackQueryHandler
 from telegram import ParseMode, Update, InlineKeyboardMarkup, InlineKeyboardButton, replymarkup, ChatPermissions
 from telegram.error import BadRequest
