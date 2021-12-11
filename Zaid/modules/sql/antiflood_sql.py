@@ -3,7 +3,7 @@ import threading
 from sqlalchemy import String, Column, Integer, UnicodeText
 from sqlalchemy.sql.sqltypes import BigInteger
 
-from EmikoRobot.modules.sql import SESSION, BASE
+from Zaid.modules.sql import SESSION, BASE
 
 DEF_COUNT = 1
 DEF_LIMIT = 0
