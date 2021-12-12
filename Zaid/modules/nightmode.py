@@ -1,5 +1,5 @@
 import os
-from EmikoRobot.modules.sql.night_mode_sql import (
+from Zaid.modules.sql.night_mode_sql import (
     add_nightmode,
     rmnightmode,
     get_all_chat_id,
