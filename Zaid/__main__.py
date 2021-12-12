@@ -96,7 +96,7 @@ buttons = [
             text="ᴀᴅᴅ ᴍᴇ ᴇʟꜱᴇ ᴜ ɢᴀʏ🔥", url="t.me/JANEMAN_OP_ROBOT?startgroup=true"),
     ],
      [
-        InlineKeyboardButton(text="ʙᴀꜱɪᴄ ɢᴜɪᴅᴇ 📢", callback_data="zaid_about_"),
+        InlineKeyboardButton(text="ʙᴀꜱɪᴄ ɢᴜɪᴅᴇ 📢", callback_data="zaid_"),
      ],
      [  
         InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ ➡️", url="https://t.me/INDIAN_NETWORK_OP"),
