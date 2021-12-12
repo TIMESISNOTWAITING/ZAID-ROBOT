@@ -393,7 +393,6 @@ def zaid_about_callback(update: Update, context: CallbackContext):
                 timeout=60,
                 disable_web_page_preview=False,
         )
-
 @run_async
 def about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
@@ -416,8 +415,8 @@ parse_mode=ParseMode.MARKDOWN,
                 [
                  [
                    InlineKeyboardButton(
-                    text="sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ", url="https://t.me/Superior_Support"), InlineKeyboardButton(
-                    text="ɴᴇᴡ's ᴄʜᴀɴɴᴇʟ", url="https://t.me/Superior_bots"), 
+                    text="sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ", url="https://t.me/INDIAN_NETWORK_OP"), InlineKeyboardButton(
+                    text="ɴᴇᴡ's ᴄʜᴀɴɴᴇʟ", url="https://t.me/JANEMAN_UPDATE"), 
                  ],
                  [
                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="zaid_about_"),
