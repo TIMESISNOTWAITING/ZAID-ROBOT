@@ -228,7 +228,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_photo(
-            START_IMG, caption= "#𝙰𝙻𝚆𝙰𝚈𝚂 𝙾𝙿!\n<b>𝚄𝙿 𝚃𝙸𝙼𝙴 ⌚:</b> <code>{}</code>".format(
+            EMI_IMG, caption= "#𝙰𝙻𝚆𝙰𝚈𝚂 𝙾𝙿!\n<b>𝚄𝙿 𝚃𝙸𝙼𝙴 ⌚:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
