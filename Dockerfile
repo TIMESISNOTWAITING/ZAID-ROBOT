@@ -64,7 +64,7 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/EmikoRobot 
+# Copy Python Requirements to /root/Zaid 
 RUN git clone https://github.com/ITZ-ZAID/Robot /root/Zaid
 WORKDIR /root/Zaid
 
