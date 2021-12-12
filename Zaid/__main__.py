@@ -83,10 +83,10 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 *Hello {} !*
 😈 HI'm Zaid, An anime - Themed advanced telegram Group management with lots of features.
-────────────────────────
+───────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
-────────────────────────
+───────────────────────
 ✪ Bot For help You Manage & Protect Your Groups.
 [➼](https://telegra.ph/file/be24bbabbe0ec30dff489.jpg) So What U Waiting For Add Me To Ur chat
 ───────────────────────
