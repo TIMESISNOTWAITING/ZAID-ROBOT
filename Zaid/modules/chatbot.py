@@ -307,7 +307,7 @@ async def inuka(client, message):
         "Hi, My name is Zaid Nice to meet you.",
         "Hi, my friend, what can I do for you today?")
 
-    response = response.replace("Aco", "Zaid")
+        response = response.replace("Aco", "Zaid")
         response = response.replace("aco", "zaid")
         response = response.replace("Luna", "Zaid")
         response = response.replace("luna", "zaid")
