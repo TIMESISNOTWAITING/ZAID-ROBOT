@@ -319,7 +319,7 @@ def help_button(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="Go Back", callback_data="help_back")]]
+                    [[InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ", callback_data="help_back"), InlineKeyboardButton(text="ʜᴏᴍᴇ", callback_data="emiko_back")]]
                 ),
             )
 
