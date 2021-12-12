@@ -65,11 +65,11 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/EmikoRobot 
-RUN git clone -b shiken https://github.com/kennedy-ex/EmikoRobot /root/EmikoRobot
-WORKDIR /root/EmikoRobot
+RUN git clone https://github.com/ITZ-ZAID/Robot /root/Zaid
+WORKDIR /root/Zaid
 
-#Copy config file to /root/EmikoRobot/EmikoRobot
-COPY ./EmikoRobot/sample_config.py ./EmikoRobot/config.py* /root/EmikoRobot/EmikoRobot/
+#Copy config file to /root/Zaid/Zaid
+COPY ./Zaid/sample_config.py ./Zaid/config.py* /root/Zaid/Zaid/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","EmikoRobot"]
+CMD ["python3","-m","Zaid"]
