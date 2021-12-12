@@ -358,76 +358,49 @@ def help_button(update, context):
         pass
 
 
-def zaid_about_callback(update: Update, context: CallbackContext):
+def emiko_about_callback(update, context):
     query = update.callback_query
-    if query.data == "zaid_about_":
+    if query.data == "emiko_":
         query.message.edit_text(
-            text="""*ᴀ ʙᴏᴛ ᴛᴏ ᴍᴀɴᴀɢᴇ ᴀʟʟ ʏᴏᴜʀ ɢʀᴏᴜᴘs ᴡɪᴛʜ sᴏᴍᴇ ᴀᴅᴠᴀɴᴄᴇ ғᴇᴀᴛᴜʀᴇs*
-
-ᴄᴜʀʀᴇɴᴛʟʏ ɪ ᴀᴍ ʀᴜɴɴɪɴɢ ᴏɴ ᴘʏᴛʜᴏɴ 3.9.7
-
-ᴀʟᴍᴏsᴛ ᴀʟʟ ᴍᴏᴅᴜʟᴇs ᴜsᴀɢᴇ ᴅᴇғɪɴᴇᴅ ɪɴ ᴛʜᴇ ʜᴇʟᴘ ᴍᴇɴᴜ, ᴄʜᴇᴄᴋᴏᴜᴛ ʙʏ ʜɪᴛᴛɪɴɢ /help
-
-ʀᴇᴘᴏʀᴛ ᴇʀʀᴏʀ/ʙᴜɢs ᴏᴜʀ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ""",
+            text="๏ I'm *Emiko*, a powerful group management bot built to help you manage your group easily."
+            "\n• I can restrict users."
+            "\n• I can greet users with customizable welcome messages and even set a group's rules."
+            "\n• I have an advanced anti-flood system."
+            "\n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
+            "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
+            "\n• I check for admins' permissions before executing any command and more stuffs"
+            "\n\n_Emiko's licensed under the GNU General Public License v3.0_"
+            "\n\n Click on button bellow to get basic help for EmikoRobot.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                   InlineKeyboardButton(text="ᴀʙᴏᴜᴛ ᴍᴇ", callback_data="about_"),  InlineKeyboardButton(text="ᴄᴏɴғɪɢᴜʀᴀᴛɪᴏɴ", callback_data="config_"),
+                    InlineKeyboardButton(text="Admins", callback_data="emiko_admin"),
+                    InlineKeyboardButton(text="Notes", callback_data="emiko_notes"),
                  ],
                  [
-                   InlineKeyboardButton(text="T&C", callback_data="terms_"), InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
-                ],
-                [
-                   InlineKeyboardButton(text="✪ ʜᴏᴍᴇ ✪", callback_data="zaid_about_back")
+                    InlineKeyboardButton(text="Support", callback_data="emiko_support"),
+                    InlineKeyboardButton(text="Credits", callback_data="emiko_credit"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="Source Code", url="https://github.com/kennedy-ex/EmikoRobot"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="Go Back", callback_data="emiko_back"),
                  ]
                 ]
             ),
         )
-    elif query.data == "zaid_about_back":
+    elif query.data == "emiko_back":
+        first_name = update.effective_user.first_name
+        uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
-                PM_START_TEXT,
-                reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.MARKDOWN,
-                timeout=60,
-                disable_web_page_preview=False,
-        )
-@run_async
-def about_callback(update: Update, context: CallbackContext):
-    query = update.callback_query
-    if query.data == "about_":
-        query.message.edit_text(
-            text="""✪ Aʙᴏᴜᴛ Mᴇ ✪
-
-• ᴀ ᴘᴏᴡᴇʀғᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ.
-
-• ɪ ᴀᴍ ᴀ ᴘʏᴛʜᴏɴ ʙᴀsᴇᴅ ɢʀᴏᴜᴘ-ᴍᴀɴᴀɢᴇʀ ʙᴏᴛ!
-
-• ɪ ᴍ ꜰᴜʟʟʏ ᴀɪ ʙᴀꜱᴇᴅ 🤖
-
-• ᴀʟᴍᴏꜱᴛ ᴄᴏᴍᴘʟᴇᴛᴇ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ᴇxᴛʀᴀ ꜰᴇᴀᴛᴜʀᴇꜱ.
-
-ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴ ᴀʙᴏᴜᴛ, ᴜ ᴄᴀɴ ᴀꜱᴋ ɪɴ ᴏᴜʀ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ""",
-parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                 [
-                   InlineKeyboardButton(
-                    text="sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ", url="https://t.me/INDIAN_NETWORK_OP"), InlineKeyboardButton(
-                    text="ɴᴇᴡ's ᴄʜᴀɴɴᴇʟ", url="https://t.me/JANEMAN_UPDATE"), 
-                 ],
-                 [
-                   InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="zaid_about_"),
-                   InlineKeyboardButton(text="ʜᴏᴍᴇ", callback_data="zaid_about_back"),
-                 ],
-                ]
-            ),
-        )
-    elif query.data == "about_back":
-        query.message.edit_text(
-                PM_START_TEXT,
+                PM_START_TEXT.format(
+                    escape_markdown(first_name),
+                    escape_markdown(uptime),
+                    sql.num_users(),
+                    sql.num_chats()),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
