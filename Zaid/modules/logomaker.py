@@ -79,7 +79,7 @@ async def logo_gen(event):
         id_ = random.choice(pics)
         bg_ = await id_.download_media()
     if not font_:
-        fpath_ = glob.glob("./EmikoRobot/resources/fonts/*")
+        fpath_ = glob.glob("./Zaid/resources/fonts/*")
         font_ = random.choice(fpath_)
     if len(name) <= 8:
         fnt_size = 120
@@ -113,7 +113,7 @@ async def logo_gen(event):
         await tbot.send_file(
             event.chat_id,
             file=flnme,
-            caption="Logo by [Emiko Robot](https://t.me/EmiexRobot)",
+            caption="Logo by [Zaid Robot](https://t.me/Zaid2_Robot)",
             force_document=False,
         )
         os.remove(flnme)
@@ -151,7 +151,7 @@ async def logo_(event):
             pics.append(i)
         id_ = random.choice(pics)
         bg_ = await id_.download_media()
-        fpath_ = glob.glob("./EmikoRobot/resources/fonts/*")
+        fpath_ = glob.glob("./Zaid/resources/fonts/*")
         font_ = random.choice(fpath_)
     if not bg_:
         pics = []
@@ -162,7 +162,7 @@ async def logo_(event):
         id_ = random.choice(pics)
         bg_ = await id_.download_media()
     if not font_:
-        fpath_ = glob.glob("./EmikoRobot/resources/fonts/*")
+        fpath_ = glob.glob("./Zaid/resources/fonts/*")
         font_ = random.choice(fpath_)
     if len(name) <= 8:
         fnt_size = 105
