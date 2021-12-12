@@ -358,9 +358,9 @@ def help_button(update, context):
         pass
 
 
-def emiko_about_callback(update, context):
+def zaid_about_callback(update, context):
     query = update.callback_query
-    if query.data == "emiko_":
+    if query.data == "zaid_":
         query.message.edit_text(
             text="๏ I'm *Emiko*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
@@ -387,12 +387,12 @@ def emiko_about_callback(update, context):
                     InlineKeyboardButton(text="Source Code", url="https://github.com/kennedy-ex/EmikoRobot"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="emiko_back"),
+                    InlineKeyboardButton(text="Go Back", callback_data="zaid_back"),
                  ]
                 ]
             ),
         )
-    elif query.data == "emiko_back":
+    elif query.data == "zaid_back":
         first_name = update.effective_user.first_name
         uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
@@ -464,7 +464,7 @@ def emiko_about_callback(update, context):
                 [
                  [
                     InlineKeyboardButton(text="Zaid", url="https://github.com/ITZ-ZAID"),
-                    InlineKeyboardButton(text="TheHamkerCat", url="https://github.com/AMANTYA1"),
+                    InlineKeyboardButton(text="Aman", url="https://github.com/AMANTYA1"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="zaid_"),
