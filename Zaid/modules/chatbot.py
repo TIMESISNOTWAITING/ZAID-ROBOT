@@ -57,9 +57,9 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("Emiko AI Already Activated In This Chat")
+            await lel.edit("AI Already Activated In This Chat")
             return
-        await lel.edit(f"Emiko AI Actived by {message.from_user.mention()} for users in {message.chat.title}")
+        await lel.edit(f"AI Actived by {message.from_user.mention()} for users in {message.chat.title}")
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await edit_or_reply(message, "`Processing...`")
@@ -204,7 +204,7 @@ async def hmm(client, message):
         test = test.replace("I live in Delhi, India.", "I live in Delhi, India.")
         test = test.replace("I was created by @Timesisnotwaiting", "I made myself")
         test = test.replace(
-            "Hello there I am Emiko...nice to meet u",
+            "Hello there I am Zaid....nice to meet u",
             "Hi, my friend! Do you want me to tell you a joke?")
         test = test.replace("@excrybaby is my owner", "Have the control right.")
         test = test.replace(
@@ -290,7 +290,7 @@ async def inuka(client, message):
             test = test.text
         except:
             return
-    test = test.replace("zaid", "Aco")
+        test = test.replace("zaid", "Aco")
         test = test.replace("zaid", "Aco")
         test = test.replace("My god is @Timesisnotwaiting", "I'm a Hindu but Name only like Muslim")
         test = test.replace("16", "9")
@@ -385,7 +385,7 @@ async def inuka(client, message):
 
     # test = emoji.demojize(test.strip())
 
-    test = test.replace("zaid", "Aco")
+        test = test.replace("zaid", "Aco")
         test = test.replace("zaid", "Aco")
         test = test.replace("My god is @Timesisnotwaiting", "I'm a Hindu but Name only like Muslim")
         test = test.replace("16", "9")
@@ -401,7 +401,7 @@ async def inuka(client, message):
     test = test.replace(
         "Hi, My name is Zaid Nice to meet you.",
         "Hi, my friend, what can I do for you today?")
-    response = response.replace("Aco", "Zaid")
+        response = response.replace("Aco", "Zaid")
         response = response.replace("aco", "zaid")
         response = response.replace("Luna", "Zaid")
         response = response.replace("luna", "zaid")
