@@ -92,17 +92,19 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="About ", callback_data="emiko_"),
-    ],
-    [
-        InlineKeyboardButton(text=" Help", callback_data="help_back"),
         InlineKeyboardButton(
-            text="Try inline!​​", switch_inline_query_current_chat=""
-        ),
+            text="ᴀᴅᴅ ᴍᴇ ᴇʟꜱᴇ ᴜ ɢᴀʏ🔥", url="t.me/JANEMAN_OP_ROBOT?startgroup=true"),
     ],
+     [
+        InlineKeyboardButton(text="ʙᴀꜱɪᴄ ɢᴜɪᴅᴇ 📢", callback_data="zaid_about_"),
+     ],
+     [  
+        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ ➡️", url="https://t.me/INDIAN_NETWORK_OP"),
+        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ☑️", url="https://t.me/JANEMAN_UPDATE"),
+    ], 
+
     [
-        InlineKeyboardButton(
-            text="➗ Add Zaid To Your Group ➗", url="t.me/Zaid2_Robot?startgroup=new"),
+        InlineKeyboardButton(text="ʜᴇʟᴘ ᴀɴᴅ ᴄᴍᴅꜱ🔥", callback_data="help_back"),
     ],
 ]
 
@@ -113,8 +115,8 @@ HELP_STRINGS = """
 START_IMG = "https://telegra.ph/file/be24bbabbe0ec30dff489.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project [Lucifer](t.me/detctective_de) \
- Supporting isnt always financial! [ ɴᴇᴛᴡᴏʀᴋ](https://t.me/Zaid_Updates) \
+ You can support the project by contacting @excrybaby \
+ Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
@@ -128,7 +130,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("Zaid.modules." + module_name)
+    imported_module = importlib.import_module("EmikoRobot.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -161,6 +163,7 @@ for module_name in ALL_MODULES:
 
     if hasattr(imported_module, "__user_settings__"):
         USER_SETTINGS[imported_module.__mod_name__.lower()] = imported_module
+
 
 
 # do not async
