@@ -94,17 +94,19 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Emiko Robot", callback_data="emiko_"),
-    ],
-    [
-        InlineKeyboardButton(text="Get Help", callback_data="help_back"),
         InlineKeyboardButton(
-            text="Try inline!​​", switch_inline_query_current_chat=""
-        ),
+            text="ᴀᴅᴅ ᴍᴇ ᴇʟꜱᴇ ᴜ ɢᴀʏ🔥", url="t.me/Zaid2_Robot?startgroup=true"),
     ],
+     [
+        InlineKeyboardButton(text="ʙᴀꜱɪᴄ ɢᴜɪᴅᴇ ", callback_data="zaid_"),
+     ],
+     [  
+        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ ⚒️", url="https://t.me/Superior_Support"),
+        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇꜱ 📢", url="https://t.me/Superior_Bots"),
+    ], 
+
     [
-        InlineKeyboardButton(
-            text="➗ Add Emiko To Your Group ➗", url="t.me/EmiexRobot?startgroup=new"),
+        InlineKeyboardButton(text="ʜᴇʟᴘ ᴀɴᴅ ᴄᴍᴅꜱ🔥", callback_data="help_back"),
     ],
 ]
 
@@ -369,19 +371,22 @@ def emiko_about_callback(update, context):
             "\n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
             "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
             "\n• I check for admins' permissions before executing any command and more stuffs"
-            "\n\n_Emiko's licensed under the GNU General Public License v3.0_"
-            "\n\n Click on button bellow to get basic help for EmikoRobot.",
+            "\n\n_ licensed under the GNU General Public License v3.0_"
+            "\n\n Click on button bellow to get basic help.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Admins", callback_data="emiko_admin"),
-                    InlineKeyboardButton(text="Commands", callback_data="help_back"),
+                    InlineKeyboardButton(text="Admins ✨", callback_data="emiko_admin"),
+                    InlineKeyboardButton(text="Commands 🏓", callback_data="help_back"),
                  ],
                  [
-                    InlineKeyboardButton(text="Support", callback_data="emiko_support"),
-                    InlineKeyboardButton(text="Developers", callback_data="emiko_credit"),
+                    InlineKeyboardButton(text="Support ⚒️", callback_data="emiko_support"),
+                    InlineKeyboardButton(text="Developers 🎁", callback_data="emiko_credit"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="Donate 💝", url=f"t.me/godfatherakkii"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_back"),
@@ -423,7 +428,7 @@ def emiko_about_callback(update, context):
 
     elif query.data == "emiko_support":
         query.message.edit_text(
-            text="*๏ support chats*"
+            text="*✨ support chats*"
             "\nJoin My Support Group/Channel for see or report a problem on Zaid.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
@@ -443,14 +448,14 @@ def emiko_about_callback(update, context):
 
     elif query.data == "emiko_credit":
         query.message.edit_text(
-            text=f"๏ Credis for Emiko\n"
-            "\nHere Developers Making And Give Inspiration For Made The EmikoRobot",
+            text=f"Creadits \n"
+            "\nHere Developers Making And Give Inspiration For Made This Bot",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Zaid", url="https://github.com/ITZ-ZAID"),
-                    InlineKeyboardButton(text="Aman", url="https://github.com/AMANTYA1"),
+                    InlineKeyboardButton(text="Zaid", url="t.me/Timesisnotwaiting"),
+                    InlineKeyboardButton(text="Aman", url="t.me/Shubhanshutya"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
@@ -721,7 +726,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1606221784:
+        if OWNER_ID != 1669178360:
             update.effective_message.reply_text(
                 "I'm free for everyone ❤️ If you wanna make me smile, just join"
                 "[My Channel]({})".format(DONATION_LINK),
@@ -770,7 +775,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                f"""**Emiko Robot Started!**
+                f"""**#OP**
 
 **Python:** `{memek()}`
 **Telegram Library:** `v{peler}`""",
