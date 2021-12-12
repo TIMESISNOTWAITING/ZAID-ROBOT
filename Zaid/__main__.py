@@ -394,6 +394,7 @@ def zaid_about_callback(update: Update, context: CallbackContext):
                 disable_web_page_preview=False,
         )
 
+@run_async
 def about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "about_":
