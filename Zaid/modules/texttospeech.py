@@ -7,7 +7,7 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from EmikoRobot import *
+from Zaid import *
 
 from Zaid import telethn as tbot
 from Zaid.events import register
