@@ -231,7 +231,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            f"<b>Hi I'm Emiko robot!</b>\n<b>Started working since:</b> <code>{uptime}</code>",
+            f"<b>Hi I'm Zaid robot!</b>\n<b>Started working since:</b> <code>{uptime}</code>",
             parse_mode=ParseMode.HTML
        )
 
@@ -317,7 +317,7 @@ def help_button(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="Go Back", callback_data="help_back")]]
+                    [[InlineKeyboardButton(text="Go 🔙", callback_data="help_back")]]
                 ),
             )
 
@@ -358,9 +358,9 @@ def help_button(update, context):
         pass
 
 
-def emiko_about_callback(update, context):
+def zaid_about_callback(update, context):
     query = update.callback_query
-    if query.data == "emiko_":
+    if query.data == "zaid_about_":
         query.message.edit_text(
             text="๏ I'm *Emiko*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
@@ -376,23 +376,23 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Admins", callback_data="emiko_admin"),
-                    InlineKeyboardButton(text="Notes", callback_data="emiko_notes"),
+                    InlineKeyboardButton(text="Admins", callback_data="zaid_admin"),
+                    InlineKeyboardButton(text="Notes", callback_data="zaid_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="Support", callback_data="emiko_support"),
-                    InlineKeyboardButton(text="Credits", callback_data="emiko_credit"),
+                    InlineKeyboardButton(text="Support", callback_data="zaid_support"),
+                    InlineKeyboardButton(text="Credits", callback_data="zaid_credit"),
                  ],
                  [
                     InlineKeyboardButton(text="Source Code", url="https://github.com/kennedy-ex/EmikoRobot"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="emiko_back"),
+                    InlineKeyboardButton(text="Go Back", callback_data="zaid_back"),
                  ]
                 ]
             ),
         )
-    elif query.data == "emiko_back":
+    elif query.data == "zaid_back":
         first_name = update.effective_user.first_name
         uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
@@ -407,10 +407,10 @@ def emiko_about_callback(update, context):
                 disable_web_page_preview=False,
         )
 
-    elif query.data == "emiko_admin":
+    elif query.data == "zaid_admin":
         query.message.edit_text(
             text=f"*๏ Let's make your group bit effective now*"
-            "\nCongragulations, EmikoRobot now ready to manage your group."
+            "\nCongragulations, Zaid now ready to manage your group."
             "\n\n*Admin Tools*"
             "\nBasic Admin tools help you to protect and powerup your group."
             "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -420,11 +420,11 @@ def emiko_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="emiko_")]]
+                [[InlineKeyboardButton(text="Go Back", callback_data="zaid_")]]
             ),
         )
 
-    elif query.data == "emiko_notes":
+    elif query.data == "zaid_notes":
         query.message.edit_text(
             text=f"<b>๏ Setting up notes</b>"
             f"\nYou can save message/media/audio or anything as notes"
@@ -432,22 +432,22 @@ def emiko_about_callback(update, context):
             f"\n\nYou can also set buttons for notes and filters (refer help menu)",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="emiko_")]]
+                [[InlineKeyboardButton(text="Go Back", callback_data="zaid_")]]
             ),
         )
     elif query.data == "emiko_support":
         query.message.edit_text(
-            text="*๏ Emiko support chats*"
+            text="*๏ Zaid support chats*"
             "\nJoin My Support Group/Channel for see or report a problem on Emiko.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/emikosupport"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/KennedyProject"),
+                    InlineKeyboardButton(text="Support", url="t.me/Superior_Support"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/Superior_bots"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
+                    InlineKeyboardButton(text="Go Back", callback_data="zaid_"),
                  
                  ]
                 ]
@@ -455,35 +455,19 @@ def emiko_about_callback(update, context):
         )
 
 
-    elif query.data == "emiko_credit":
+    elif query.data == "zaid_credit":
         query.message.edit_text(
-            text=f"๏ Credis for Emiko\n"
-            "\nHere Developers Making And Give Inspiration For Made The EmikoRobot",
+            text=f"๏ Credis for Zaid\n"
+            "\nHere Developers Making And Give Inspiration For Made The Zaid",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="sena-ex", url="https://github.com/kennedy-ex"),
-                    InlineKeyboardButton(text="TheHamkerCat", url="https://github.com/TheHamkerCat"),
+                    InlineKeyboardButton(text="Zaid", url="https://github.com/ITZ-ZAID"),
+                    InlineKeyboardButton(text="TheHamkerCat", url="https://github.com/AMANTYA1"),
                  ],
                  [
-                    InlineKeyboardButton(text="Feri", url="https://github.com/FeriEXP"),
-                    InlineKeyboardButton(text="riz-ex", url="https://github.com/riz-ex"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Anime Kaizoku", url="https://github.com/animekaizoku"),
-                    InlineKeyboardButton(text="TheGhost Hunter", url="https://github.com/HuntingBots"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Inuka Asith", url="https://github.com/inukaasith"),
-                    InlineKeyboardButton(text="Noob-Kittu", url="https://github.com/noob-kittu"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Queen Arzoo", url="https://github.com/QueenArzoo"),
-                    InlineKeyboardButton(text="Paul Larsen", url="https://github.com/PaulSonOfLars"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
+                    InlineKeyboardButton(text="Go Back", callback_data="zaid_"),
                  ]
                 ]
             ),
@@ -509,7 +493,7 @@ def Source_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="emiko_")
+                    InlineKeyboardButton(text="Go Back", callback_data="zaid_")
                  ]
                 ]
             ),
@@ -751,7 +735,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1606221784:
+        if OWNER_ID != 1669178360:
             update.effective_message.reply_text(
                 "I'm free for everyone ❤️ If you wanna make me smile, just join"
                 "[My Channel]({})".format(DONATION_LINK),
@@ -800,7 +784,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                f"""**Emiko Robot Started!**
+                f"""** I'm Back!**
 
 **Python:** `{memek()}`
 **Telegram Library:** `v{peler}`""",
@@ -827,7 +811,7 @@ def main():
     )
 
     about_callback_handler = CallbackQueryHandler(
-        emiko_about_callback, pattern=r"emiko_", run_async=True
+        zaid_about_callback, pattern=r"zaid_", run_async=True
     )
 
     source_callback_handler = CallbackQueryHandler(
