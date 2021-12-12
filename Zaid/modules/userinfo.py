@@ -38,7 +38,7 @@ from Zaid.modules.sql import SESSION
 import Zaid.modules.sql.userinfo_sql as sql
 from Zaid.modules.disable import DisableAbleCommandHandler
 from Zaid.modules.sql.global_bans_sql import is_user_gbanned
-from Zaid.modules.sql.afk_user import is_user_afk, afk_reason
+from Zaid.modules.sql.afk_sql import is_user_afk, afk_reason
 from Zaid.modules.sql.users_sql import get_user_num_chats
 from Zaid.modules.helper_funcs.chat_status import sudo_plus
 from Zaid.modules.helper_funcs.extraction import extract_user
