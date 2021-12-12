@@ -14,16 +14,16 @@ from Zaid.modules.helper_funcs.chat_status import (
     user_admin_no_reply,
     can_delete,
 )
-from EmikoRobot.modules.helper_funcs.extraction import (
+from Zaid.modules.helper_funcs.extraction import (
     extract_text,
     extract_user,
     extract_user_and_text,
 )
-from EmikoRobot.modules.helper_funcs.filters import CustomFilters
-from EmikoRobot.modules.helper_funcs.misc import split_message
-from EmikoRobot.modules.helper_funcs.string_handling import split_quotes
-from EmikoRobot.modules.log_channel import loggable
-from EmikoRobot.modules.sql import warns_sql as sql
+from Zaid.modules.helper_funcs.filters import CustomFilters
+from Zaid.modules.helper_funcs.misc import split_message
+from Zaid.modules.helper_funcs.string_handling import split_quotes
+from Zaid.modules.log_channel import loggable
+from Zaid.modules.sql import warns_sql as sql
 from telegram import (
     CallbackQuery,
     Chat,
@@ -45,7 +45,7 @@ from telegram.ext import (
     run_async,
 )
 from telegram.utils.helpers import mention_html
-from EmikoRobot.modules.sql.approve_sql import is_approved
+from Zaid.modules.sql.approve_sql import is_approved
 
 WARN_HANDLER_GROUP = 9
 CURRENT_WARNING_FILTER_STRING = "<b>Current warning filters in this chat:</b>\n"
