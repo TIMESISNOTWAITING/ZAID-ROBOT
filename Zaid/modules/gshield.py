@@ -8,7 +8,7 @@ import requests
 from better_profanity import profanity
 from google_trans_new import google_translator
 from telethon import events
-from Zaid.tl.types import ChatBannedRights
+from telethon.tl.types import ChatBannedRights
 from Zaid.confing import get_int_key, get_str_key
 from Zaid.services.telethonbasics import is_admin
 from Zaid.events import register
