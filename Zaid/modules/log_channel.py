@@ -1,7 +1,7 @@
 from datetime import datetime
 from functools import wraps
 from telegram.ext import CallbackContext
-from EmikoRobot.modules.helper_funcs.misc import is_module_loaded
+from Zaid.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
