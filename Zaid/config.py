@@ -20,6 +20,9 @@ class Config(object):
 
     # RECOMMENDED
     INFOPIC = "https://telegra.ph/file/be24bbabbe0ec30dff489.jpg"   
+    CF_API_KEY = ""
+    LASTFM_API_KEY = ""
+    BOT_USERNAME = "Zaid2_Robot"
     WALL_API = ""
     TIME_API_KEY = ""
     CASH_API_KEY = ""
