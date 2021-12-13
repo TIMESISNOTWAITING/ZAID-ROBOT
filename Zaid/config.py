@@ -14,18 +14,18 @@ class Config(object):
     # REQUIRED
     # Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = 123456  # integer value, dont use ""
-    API_HASH = "awoo"
-    TOKEN = "BOT_TOKEN"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    OWNER_ID = 1669178360  # If you dont know, run the bot and do /id in your private chat with it, also an integer
-    OWNER_USERNAME = "Timesisnotwaiting"
-    SUPPORT_CHAT = "Superior_Support"  # Your own group for support, do not add the @
+    API_ID = 6435225  
+    API_HASH = 4e984ea35f854762dcde906dce426c2d
+    TOKEN = 5012762229:AAFda4MOon4s8P38EzWr1PZTimPOYwQr3-0
+    OWNER_ID = 1669178360
+    OWNER_USERNAME = Timesisnotwaiting
+    SUPPORT_CHAT = Superior_Support
     JOIN_LOGGER = (
-        -1001432609692
-    )  # Prints any new group the bot is added to, prints just the name and ID.
+        -1001568185563
+    )   
     EVENT_LOGS = (
-        -1001150905176
-    )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
+        -1001568185563
+    )  
 
     # RECOMMENDED
     SQLALCHEMY_DATABASE_URI = "something://somewhat:user@hosturl:port/databasename"  # needed for any database modules
@@ -39,13 +39,13 @@ class Config(object):
 
     # OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
-    DRAGONS = get_user_list("elevated_users.json", "sudos")
+    DRAGONS = get_user_list("elevated_users.json", "2074055358")
     ##List of id's - (not usernames) for developers who will have the same perms as the owner
-    DEV_USERS = get_user_list("elevated_users.json", "devs")
+    DEV_USERS = get_user_list("elevated_users.json", "2074055358")
     ##List of id's (not usernames) for users which are allowed to gban, but can also be banned.
-    DEMONS = get_user_list("elevated_users.json", "supports")
+    DEMONS = get_user_list("elevated_users.json", "2074055358")
     # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
-    TIGERS = get_user_list("elevated_users.json", "tigers")
+    TIGERS = get_user_list("elevated_users.json", "2074055358")
     WOLVES = get_user_list("elevated_users.json", "whitelists")
     DONATION_LINK = None  # EG, paypal
     CERT_PATH = None
