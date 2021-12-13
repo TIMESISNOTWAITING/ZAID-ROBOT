@@ -19,15 +19,16 @@ from Zaid.modules.sql.nsfw_watch_sql import (
     rmnsfwatch,
 )
 from Zaid import telethn as tbot, MONGO_DB_URI, BOT_ID
+from Zaid import MONGO_DB_URI
 
 translator = google_translator()
 MUTE_RIGHTS = ChatBannedRights(until_date=None, send_messages=False)
 
-MONGO_DB_URI = get_str_key("MONGO_DB_URI")
+
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
-db = client["LaylaRobot"]
+db = client["ZaidRobot"]
 
 async def is_nsfw(event):
     lmao = event
