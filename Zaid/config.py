@@ -14,12 +14,12 @@ class Config(object):
     # REQUIRED
     # Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = 6435225  
-    API_HASH = 4e984ea35f854762dcde906dce426c2d
-    TOKEN = 5012762229:AAFda4MOon4s8P38EzWr1PZTimPOYwQr3-0
-    OWNER_ID = 1669178360
-    OWNER_USERNAME = Timesisnotwaiting
-    SUPPORT_CHAT = Superior_Support
+    API_ID = "6435225"  
+    API_HASH = "4e984ea35f854762dcde906dce426c2d"
+    TOKEN = "5012762229:AAFda4MOon4s8P38EzWr1PZTimPOYwQr3-0"
+    OWNER_ID = "1669178360"
+    OWNER_USERNAME = "Timesisnotwaiting"
+    SUPPORT_CHAT = "Superior_Support"
     JOIN_LOGGER = (
         -1001568185563
     )   
