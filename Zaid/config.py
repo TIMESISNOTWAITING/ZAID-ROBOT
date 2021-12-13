@@ -19,6 +19,8 @@ class Config(object):
     )  
 
     # RECOMMENDED
+    BOT_ID = "5012762229"
+    STRING_SESSION = "1AZWarzYBu6lLskBZ0pY_9eQp5ge87Z8Bou0X39X5Kp0TI7Q4e1_ZAQ1Bp9J0lHNOC7N7wqx49-3jBqRJrBXoG9o-lkK8RcDHbfWP55iCqr7KrXrjI5PWfbE9FchN-gZv_yxpBtk9SCOz8YlFQRASclPnlqpvQiiolWHL7Nb1Qlw44Q2DhoMPoE9QlgF-gnYubS1mz7NYCAZ7Kb2xoWHrZM8I1IhrONSv3GrYSGeC6-Rh1yZvdlSQVtbIi5bI1ONE7K5Z9g_BXISLMlGg0Qyjfi7P08ofuD4vJXiOjTXnYLF-QomcGrziF141P_X3XX862UBJVVRFXytRIXipfkWo0iTXqtOM-Q8="
     SQLALCHEMY_DATABASE_URI = "postgres://kfxheqenczaskf:9cb540dea5cafdc14b441d70bc51613f4f7e51ce2b199ff265520a022015da86@ec2-35-153-239-126.compute-1.amazonaws.com:5432/d13g4j50j3vjlk"
     LOAD = []
     NO_LOAD = ["rss", "cleaner", "connection", "math"]
