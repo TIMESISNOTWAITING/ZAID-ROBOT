@@ -1,14 +1,4 @@
 # Create a new config.py or rename this to config.py file in same dir and import, then extend this class.
-import json
-import os
-
-
-def get_user_list(config, key):
-    with open("{}/Zaid/{}".format(os.getcwd(), config), "r") as json_file:
-        return json.load(json_file)[key]
-
-
-# Create a new config.py or rename this to config.py file in same dir and import, then extend this class.
 class Config(object):
     LOGGER = True
     # REQUIRED
@@ -39,14 +29,14 @@ class Config(object):
 
     # OPTIONAL
     ##List of id's -  (not usernames) for users which have sudo access to the bot.
-    DRAGONS = get_user_list("elevated_users.json", "")
+    DRAGONS = "1669178360"
     ##List of id's - (not usernames) for developers who will have the same perms as the owner
-    DEV_USERS = get_user_list("elevated_users.json", "")
+    DEV_USERS = "1669178360"
     ##List of id's (not usernames) for users which are allowed to gban, but can also be banned.
-    DEMONS = get_user_list("elevated_users.json", "")
+    DEMONS = "1669178360"
     # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
-    TIGERS = get_user_list("elevated_users.json", "")
-    WOLVES = get_user_list("elevated_users.json", "")
+    TIGERS = "1669178360"
+    WOLVES = "1669178360"
     DONATION_LINK = None  # EG, paypal
     CERT_PATH = None
     PORT = 5000
