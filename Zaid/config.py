@@ -9,6 +9,7 @@ class Config(object):
     TOKEN = "5012762229:AAFda4MOon4s8P38EzWr1PZTimPOYwQr3-0"
     OWNER_ID = "1669178360"
     OWNER_USERNAME = "Timesisnotwaiting"
+    MONGO_DB_URI = "mongodb+srv://music:music@cluster0.sh6h4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
     SUPPORT_CHAT = "Superior_Support"
     JOIN_LOGGER = (
         -1001568185563
