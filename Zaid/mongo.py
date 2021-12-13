@@ -12,7 +12,7 @@ MONGO_DB = "ZaidRobot"
 
 
 client = MongoClient()
-client = MongoClient(mongodb+srv://music:music@cluster0.sh6h4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority, 27017)[MONGO_DB]
+client = MongoClient(MONGO_DB_URI, 27017)[MONGO_DB]
 motor = motor_asyncio.AsyncIOMotorClient(MONGO_DB_URI, MONGO_PORT)
 db = motor[MONGO_DB]
 db = client["ZaidRobot"]
