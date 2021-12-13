@@ -5,7 +5,6 @@ DEFAULTS = {
     "LOAD_MODULES": True,
 }
 
-
 def get_str_key(name, required=False):
     if name in DEFAULTS:
         default = DEFAULTS[name]
@@ -19,7 +18,6 @@ def get_str_key(name, required=False):
         sys.exit(2)
     else:
         return data
-
 
 def get_int_key(name, required=False):
     if name in DEFAULTS:
