@@ -6,17 +6,13 @@ class Config(object):
 
     API_ID = "6435225"  
     API_HASH = "4e984ea35f854762dcde906dce426c2d"
-    TOKEN = "5012762229:AAFda4MOon4s8P38EzWr1PZTimPOYwQr3-0"
+    TOKEN = "1901951380:AAG6sd_iv26627lMAZv3FbL2kAj3-q_8q-4"
     OWNER_ID = "1669178360"
     OWNER_USERNAME = "Timesisnotwaiting"
-    MONGO_DB_URI = "mongodb+srv://music:music@cluster0.sh6h4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    MONGO_DB_URI = "mongodb+srv://ZAID2:ZAID2@cluster0.plap4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
     SUPPORT_CHAT = "Superior_Support"
-    JOIN_LOGGER = (
-        -1001568185563
-    )   
-    EVENT_LOGS = (
-        -1001568185563
-    )  
+    JOIN_LOGGER = "-1001566858208"
+    EVENT_LOGS = "-1001566858208"
 
     # RECOMMENDED
     INFOPIC = "https://telegra.ph/file/be24bbabbe0ec30dff489.jpg"   
@@ -36,9 +32,10 @@ class Config(object):
     ARQ_API_URL = "aww"
     HEROKU_APP_NAME = ""
     HEROKU_API_KEY = ""
-    BOT_ID = "5012762229"
+    BOT_ID = "1901951380"
     STRING_SESSION = "1AZWarzYBu6lLskBZ0pY_9eQp5ge87Z8Bou0X39X5Kp0TI7Q4e1_ZAQ1Bp9J0lHNOC7N7wqx49-3jBqRJrBXoG9o-lkK8RcDHbfWP55iCqr7KrXrjI5PWfbE9FchN-gZv_yxpBtk9SCOz8YlFQRASclPnlqpvQiiolWHL7Nb1Qlw44Q2DhoMPoE9QlgF-gnYubS1mz7NYCAZ7Kb2xoWHrZM8I1IhrONSv3GrYSGeC6-Rh1yZvdlSQVtbIi5bI1ONE7K5Z9g_BXISLMlGg0Qyjfi7P08ofuD4vJXiOjTXnYLF-QomcGrziF141P_X3XX862UBJVVRFXytRIXipfkWo0iTXqtOM-Q8="
-    SQLALCHEMY_DATABASE_URI = "postgres://kfxheqenczaskf:9cb540dea5cafdc14b441d70bc51613f4f7e51ce2b199ff265520a022015da86@ec2-35-153-239-126.compute-1.amazonaws.com:5432/d13g4j50j3vjlk"
+    SQLALCHEMY_DATABASE_URI = "postgres://smvcruqf:nCMZMToEGbOukBdyoti7_LOAXDF_hhl5@chunee.db.elephantsql.com/smvcruqf"
+    DATABASE_URL = "postgres://smvcruqf:nCMZMToEGbOukBdyoti7_LOAXDF_hhl5@chunee.db.elephantsql.com/smvcruqf"
     LOAD = []
     NO_LOAD = ["rss", "cleaner", "connection", "math"]
     WEBHOOK = False
