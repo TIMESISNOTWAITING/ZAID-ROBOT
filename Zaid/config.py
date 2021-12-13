@@ -28,7 +28,7 @@ class Config(object):
     )  
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = "something://somewhat:user@hosturl:port/databasename"  # needed for any database modules
+    SQLALCHEMY_DATABASE_URI = postgres://kfxheqenczaskf:9cb540dea5cafdc14b441d70bc51613f4f7e51ce2b199ff265520a022015da86@ec2-35-153-239-126.compute-1.amazonaws.com:5432/d13g4j50j3vjlk
     LOAD = []
     NO_LOAD = ["rss", "cleaner", "connection", "math"]
     WEBHOOK = False
