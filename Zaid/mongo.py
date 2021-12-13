@@ -7,7 +7,7 @@ from Zaid import MONGO_DB_URI
 
 
 MONGO_PORT = "27017"
-MONGO_DB_URI = "mongodb+srv://music:music@cluster0.sh6h4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+MONGO_DB_URI = "mongodb+srv://ZAID2:ZAID2@cluster0.plap4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 MONGO_DB = "ZaidRobot"
 
 
