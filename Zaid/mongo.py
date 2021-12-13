@@ -13,7 +13,7 @@ MONGO_DB = "ZaidRobot"
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI, 27017)[MONGO_DB]
-motor = motor_asyncio.AsyncIOMotorClient(MONGO_DB_URI, MONGO_PORT)
+motor = motor_asyncio.AsyncIOMotorClient(MONGO_DB_URI, 27017)
 db = motor[MONGO_DB]
 db = client["ZaidRobot"]
 try:
