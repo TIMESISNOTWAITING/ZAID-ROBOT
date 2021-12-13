@@ -2,7 +2,7 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 from Zaid import telethn as tbot
 from Zaid.events import register
 from Zaid import ubot2 as ubot
-from asyncio.exceptions import TimeoutError
+from asyncio import TimeoutError
 
 
 @register(pattern="^/sg ?(.*)")
