@@ -26,6 +26,7 @@ class Config(object):
     WALL_API = ""
     OPENWEATHERMAP_ID = ""
     TEMP_DOWNLOAD_DIRECTORY = ""
+    REM_BG_API_KEY = ""
     TIME_API_KEY = ""
     CASH_API_KEY = ""
     REM_BG_API_KEY = ""
