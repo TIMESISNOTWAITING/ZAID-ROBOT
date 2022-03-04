@@ -82,7 +82,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-😈 HI'm Zaid, An anime - Themed advanced telegram Group management with lots of features.
+😈 HI I'm Serafall, An anime - Themed advanced telegram Group management with lots of features.
 ───────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
@@ -95,15 +95,11 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="ᴀᴅᴅ ᴍᴇ ᴇʟꜱᴇ ᴜ ɢᴀʏ🔥", url="t.me/Zaid2_Robot?startgroup=true"),
+            text="ᴀᴅᴅ ᴍᴇ ᴇʟꜱᴇ ᴜ ɢᴀʏ🔥", url="t.me/serafalll_bot?startgroup=true"),
     ],
      [
         InlineKeyboardButton(text="ʙᴀꜱɪᴄ ɢᴜɪᴅᴇ ", callback_data="emiko_"),
      ],
-     [  
-        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ ⚒️", url="https://t.me/Superior_Support"),
-        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇꜱ 📢", url="https://t.me/Superior_Bots"),
-    ], 
 
     [
         InlineKeyboardButton(text="ʜᴇʟᴘ ᴀɴᴅ ᴄᴍᴅꜱ🔥", callback_data="help_back"),
@@ -114,7 +110,6 @@ buttons = [
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
-EMI_IMG = "https://telegra.ph/file/be24bbabbe0ec30dff489.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project by contacting @Timesisnotwaiting \
@@ -233,7 +228,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            f"<b>Hi I'm Zaid robot!</b>\n<b>Started working since:</b> <code>{uptime}</code>",
+            f"<b>Hi I'm Serafall !</b>\n<b>Started working since:</b> <code>{uptime}</code>",
             parse_mode=ParseMode.HTML
        )
 
@@ -364,7 +359,7 @@ def emiko_about_callback(update, context):
     query = update.callback_query
     if query.data == "emiko_":
         query.message.edit_text(
-            text="๏ I'm Zaid, a powerful group management bot built to help you manage your group easily."
+            text="๏ I'm Serafall, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
@@ -384,9 +379,6 @@ def emiko_about_callback(update, context):
                  [
                     InlineKeyboardButton(text="Support ⚒️", callback_data="emiko_support"),
                     InlineKeyboardButton(text="Developers 🎁", callback_data="emiko_credit"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Donate 💝", url=f"t.me/godfatherakkii"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_back"),
@@ -412,7 +404,7 @@ def emiko_about_callback(update, context):
     elif query.data == "emiko_admin":
         query.message.edit_text(
             text=f"*๏ Let's make your group bit effective now*"
-            "\nCongragulations, Zaid now ready to manage your group."
+            "\nCongragulations, Serafall now ready to manage your group."
             "\n\n*Admin Tools*"
             "\nBasic Admin tools help you to protect and powerup your group."
             "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -433,10 +425,7 @@ def emiko_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
-                 [
-                    InlineKeyboardButton(text="Support", url="t.me/Superior_Suppport"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/Superior_bots"),
-                 ],
+                
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
                  
